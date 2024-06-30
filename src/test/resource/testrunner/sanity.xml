@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="3" parallel="tests"
+	thread-count="2">
+	<test name="Google Test _ chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://google.com" />
+		<classes>
+			<class name="Assignments_TestNG.googleUrlCheck" />	
+		</classes>
+	</test>
+	</suite>
+	
